@@ -1,0 +1,782 @@
+/*==================== Mobile First ====================*/
+
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*cor laranja: #f8670d */
+
+body {
+  background-image: linear-gradient();
+  background-image: url(images/background-mobile.png);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  transition: 250ms;
+  background-color: #f7f3e4;
+  overflow-x: hidden;
+}
+/*==================== DarkMode ====================*/
+body.DarkMode{
+  background-color: #252525;
+  background-image: url(images/background-mobile.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+footer.DarkMode{
+  background-color: rgb(0, 0, 0);
+}
+footer.DarkMode h3{
+  color: black;
+}
+footer.DarkMode .redesocial img{
+  filter: invert(0);
+}
+.info-footer a.corpreta{
+  color: black !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.781);
+  transition: 250ms;
+}
+.info-footer a.corpreta:hover{
+  color: #f8670d !important;
+}
+
+/*==================== Start header ====================*/
+.material-symbols-outlined {
+  color: white;
+  position: absolute;
+  right: 20px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24 ;
+  user-select: none;
+ 
+}
+
+.icon-large{
+  font-size: 45px !important;
+}
+
+.menu-toggle{
+  margin-left: 80%;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.background-overlay{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.626);
+  height: 100%;
+}
+
+.mainicon{
+  height: 40px;
+  width: auto;
+}
+
+a{  
+    user-select: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.header{
+  height: 70px;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(18, 18, 18, 0), rgb(0, 0, 0));
+  font-size: 11px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* position:fixed; */
+  z-index: 1;
+  gap: 20px;
+}
+.header > .MudarModo{
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.MudarModo >.fa-solid{
+  font-weight: 900;
+  font-size: 25px;
+}
+.MudarModo >.fa-solid:hover{
+  scale: 1.2;
+  transition: 200ms;
+}
+.menu-toggle.DarkMode{
+  color: white;
+}
+
+.menu-active .MudarModo{
+  display: block;
+}
+.header a{
+  margin-right: 10px;
+}
+
+.header nav a{
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+  transition: 200ms;
+}
+.header nav a:hover{
+  scale: 1.3;
+}
+
+#logo-site{
+  width: 180px;
+  height: 60px;
+  padding: 0px;
+}
+
+.logo{
+  position: absolute;
+  user-select: none;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+
+.menu{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #272828;
+  width: 100%;
+  text-align: right;
+}
+
+
+
+.menu.active {
+  display: flex;
+}
+
+.menu ul {
+  list-style-type: none; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu li {
+  margin: 15px 0;
+  padding: 30px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu a {
+  font-weight: 400;
+}
+.actions{
+  margin-left: 60%;
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+}
+.actions{
+  display: none;
+}
+.actions a{
+  font-weight: 800;
+  padding: 5px;
+  font-weight: 400;
+  border-radius: 7px;
+}
+/*==================== End header ====================*/
+
+/*==================== Start Main ====================*/
+
+main{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos{
+  margin-bottom: 25px;
+  font-size: 4vh;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+
+#texto-especial{
+  color: #f8670d;
+  font-size: 2.9vh;
+}
+.main-img-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+      #img-mecanico{
+        max-width: 600px;
+        margin: auto;
+        width: 100%;
+        height: 320px;
+        flex-shrink: 0;
+      }
+
+      .main-text{
+        padding: 15px;
+        font-size: 1.2em;
+        width: 80%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.849);
+        border-radius: 10px;
+        background-position: center;
+        max-width: 650.741px;
+
+      }
+          .main-text p{
+            text-align: center;
+          }
+
+.local-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}    
+
+.localizacao{
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: 290px;
+  margin-top: 50px;
+  background-color: #f8670d;
+  box-shadow: 2px 2px 15px #f8670dc5;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 250ms;
+}
+
+#h2-locale{
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.772);
+  color: white;
+  float: right;
+  margin-bottom: 10px;
+}
+
+#iframe-maps{
+  border-radius: 10px;
+}
+
+.form-cadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f8670d;
+  width: 40%;
+  box-shadow: 2px 2px 15px #f8670dc5;
+  transition: 250ms;
+  max-width: 600px ;
+}
+
+.form-cadastro label{
+  color: white;
+  font-weight: 600;
+  font-size: 1.8em;
+  margin-bottom: 3px;
+}
+
+.form-cadastro form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-cadastro form input{
+  border: none;
+  width: 245px;
+  height: 30px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.form-cadastro h2{
+  color: white;
+  font-weight: bolder;
+  font-size: 1.9em;
+  margin-bottom: 10px;
+}
+
+.botao-enviar{
+  border: none;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  font-size: 1.3em;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #000000;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  transition: 250ms;
+}
+
+.botao-enviar:hover{
+  scale: 1.2;
+}
+/*==================== End Main ====================*/
+
+/*==================== Start Footer ====================*/
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(20, 20, 20);
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.icons-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-footer{
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.info-footer a{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+  font-weight: normal;
+  color: white;
+}
+
+.redesocial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+h3{
+  font-size: 1.3em;
+  color: white;
+  font-weight: normal;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formas-de-pagamento{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formas-de-pagamento h3{
+  font-size: 1.3em;
+  color: white;
+  font-weight: normal;
+  width: 100%;
+}
+
+.redesocial img{
+  width: 40px;
+  height: 40px;
+  filter: invert();
+}
+
+.redesocial .redesocial-icon{
+  margin: 20px;
+}
+#img-bandeira-cartoes{
+  width: 340px;
+  height: 100px;
+}
+
+/*==================== End Footer ====================*/
+
+
+/*==================== Media Query ====================*/
+
+
+/*==================== Tablet ==================== */
+@media (min-width: 768px) and (max-width: 1024px){
+  body.DarkMode{
+    background-color: #252525;
+    background-image: url(images/background-desktopi.jpeg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .menu-toggle {
+    font-size: 45px !important;
+  }
+  
+  .menu{
+    top: 100px;
+  }
+  .header .MudarModo{
+    cursor: pointer;
+    user-select: none;
+    display: block;
+  }
+  #logo-site{
+    width: 350px;
+    height: 100px;
+    padding: 0px;
+  }
+
+main{
+  padding-top: 90px;
+}
+  .main-text{
+    font-size: 2em;
+  }
+
+  .material-symbols-outlined {
+    color: white;
+    position: absolute;
+    right: 20px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+  .icon-large{
+    font-size: 80px !important; 
+  }
+
+  #img-mecanico{
+    margin: auto;
+    width: 700px;
+    height: 550px;
+  }
+
+  .localizacao{
+    height: 500px;
+  }
+  
+  #h2-locale{
+    font-size: 2.9em;
+  }
+
+  .form-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f8670d;
+    width: 80%;
+  }
+  
+  .form-cadastro label{
+    color: white;
+    font-weight: 600;
+    font-size: 2.2em;
+    margin-bottom: 3px;
+  }
+  
+  .form-cadastro form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .form-cadastro form input{
+    border: none;
+    width: 445px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .form-cadastro h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 2.9em;
+    margin-bottom: 10px;
+  }
+
+  .icons-social{
+    margin-top: 30px;
+  }
+  
+  .info-footer a{
+    font-size: 2.4em;
+  }
+  
+  .redesocial img{
+    width: 70px;
+    height: 70px;
+    filter: invert();
+  }
+  
+  #img-bandeira-cartoes{
+    width: 640px;
+    height: 200px;
+  }
+
+  h3{
+    width: 200px;
+    font-size: 2.3em;
+  }
+
+  .formas-de-pagamento h3{
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em;
+  }
+}
+
+/*==================== computador ====================*/
+
+@media (min-width: 1024px) and (max-width: 2814px){
+
+/*==================== Modo Escuro ====================*/
+  body.DarkMode{
+    background-color: #252525;
+    background-image: url(images/background-desktopi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+/*==================== Modo Escuro ====================*/
+body{
+  background-image: url(images/background-desktopi.png);
+}
+.background-overlay{
+  background-color: rgba(53, 42, 37, 0.76);
+}
+.header{
+  justify-content: space-between;
+}
+  .actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5%;
+    width: 30%;
+    margin-right: 10px;
+  }
+    .menu-toggle{
+      display: none;
+    }
+
+
+    
+    .header .MudarModo{
+      display: block;
+    }
+
+    #img-mecanico{
+      height: 317px;
+      width: 366px;
+    }
+  
+
+  main{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+  }
+    .title{
+      width: 100%;
+    }
+
+    .main-img-text{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 50px;
+    }   
+        #img-mecanico{
+          margin: 0;
+
+        }
+
+  .material-symbols-outlined{
+    transform: scale(0);
+  }
+
+  .local-form{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    gap: 20px;
+    
+  }    
+    .localizacao{
+      max-width: 600px ;
+      margin: 0;
+      height: 500px;
+    }
+
+    .form-cadastro{
+      margin: 0;
+    }
+
+  .info-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .info-footer a{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition: 250ms;
+  }
+
+  .info-footer a:hover{
+    color: #f8670d !important;
+  }
+}
+
+footer.DarkMode{
+  background-color: #ebebeb;
+}
+footer.DarkMode h3{
+  color: black;
+}
+footer.DarkMode .redesocial img{
+  filter: invert(0);
+}
+.info-footer a.corpreta{
+  color: black !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.781);
+  transition: 250ms;
+}
+.info-footer a.corpreta:hover{
+  color: #f8670d !important;
+}
+
+/*==================== TV ====================*/
+
+@media (min-width: 2814px){
+  body{
+    height: 100vh;
+  }
+  footer{
+    display: flex;
+    justify-content: start;
+    
+  }
+}
+/*==================== End Media Query ====================*/
+
+/*==================== Modo Escuro ====================*/
+
+
+.background-overlay.DarkMode{
+  background-color: #000000a6;
+}
+.localizacao.DarkMode{
+  background-color: #000000;
+  color: aliceblue;
+  box-shadow: 2px 2px 15px #1d0201c5;
+}
+
+#iframe-maps.DarkMode{
+  filter: brightness(70%);
+}
+
+.form-cadastro.DarkMode{
+  background-color: #000000;
+  color: aliceblue;
+  box-shadow: 2px 2px 15px #1d0201c5;
+}
+
+.botao-enviar.DarkMode{
+  background-color: #fdfdfd;
+  color: rgb(0, 0, 0);
+}
+    .botao-enviar.DarkMode:hover{
+      color: #fdfdfd;
+      background-color: #f8670d;
+    }

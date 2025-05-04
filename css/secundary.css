@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-image: url(images/background-secundary.jpeg);
+    background-color: rgb(19, 18, 18);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 100%;
+}
+
+.background-overlay{
+    background-color: rgba(0, 0, 0, 0.42);
+    width: 100%;
+    height: 100%;
+}
+
+#botao-voltar-para-main, .botao-enviar{
+    width: 100px;
+    height: 25px;
+    background-color: #f8670d;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+#botao-voltar-para-main a{
+    text-decoration: none;
+}
+
+#botao-voltar-para-main svg {
+    fill: rgb(255, 255, 255); /* Cor do SVG para combinar com o texto */
+    width: 1.5em; /* Tamanho proporcional ao texto */
+    height: 1.5em; /* Tamanho proporcional ao texto */
+    vertical-align: text-top; /* Alinha o SVG com o texto */
+}
+
+h1{
+    font-size: 2.4em;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.45);
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.divs{
+    text-align: center;
+    
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#btn-fale-conosco{
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #f8670d;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+#btn-fale-conosco svg {
+    fill: whitesmoke; /* Cor do SVG para combinar com o texto */
+    width: 1.2em; /* Tamanho proporcional ao texto */
+    height: 1.2em; /* Tamanho proporcional ao texto */
+    vertical-align: text-top; /* Alinha o SVG com o texto */
+    margin-left: 1em; /* Espaço entre o SVG e o texto */
+}
+.divs p{
+    padding: 5px;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+}
+
+.form-contato{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.form-contato form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+form input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+#motivo{
+    width: 250px;
+    height: 100px;
+}
+
+.botao-enviar{
+    width: 150px;
+    height: 30px;
+    font-size: 1.3em;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #botao-voltar-para-main, .botao-enviar{
+        width: 120px;
+        height: 50px;
+        font-size: 1.3em;
+    }
+
+    h1{
+        font-size: 2.9em;
+    }
+
+    .divs p{
+        padding: 5px;
+        font-size: 2.1em;
+    }
+
+    form label{
+        font-size: 2.2em;
+    }
+
+    h2{
+        font-size: 2.6em;
+    }
+
+    form input{
+        width: 450px;
+        height: 100px;
+        font-size: 30px;
+    }
+
+    #motivo{
+        width: 450px;
+        height: 300px;
+        font-size: 25px;
+    }
+
+    .botao-enviar{
+        width: 200px;
+        height: 100px;
+        font-size: 2.0em;
+    }
+}
