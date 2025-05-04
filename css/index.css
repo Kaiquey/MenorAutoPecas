@@ -16,7 +16,7 @@ html{
 
 body {
   background-image: linear-gradient();
-  background-image: url(images/background-mobile.png);
+  background-image: url(../images/background-mobile.png);
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
@@ -29,7 +29,7 @@ body {
 /*==================== DarkMode ====================*/
 body.DarkMode{
   background-color: #252525;
-  background-image: url(images/background-mobile.png);
+  background-image: url(../images/background-mobile.png);
   background-repeat: repeat;
   background-position: center;
   background-size: contain;
@@ -476,7 +476,7 @@ h3{
 @media (min-width: 768px) and (max-width: 1024px){
   body.DarkMode{
     background-color: #252525;
-    background-image: url(images/background-desktopi.jpeg);
+    background-image: url(../images/background-desktopi.jpeg);
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
@@ -616,14 +616,14 @@ main{
 /*==================== Modo Escuro ====================*/
   body.DarkMode{
     background-color: #252525;
-    background-image: url(images/background-desktopi.png);
+    background-image: url(../images/background-desktopi.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 /*==================== Modo Escuro ====================*/
 body{
-  background-image: url(images/background-desktopi.png);
+  background-image: url(../images/background-desktopi.png);
 }
 .background-overlay{
   background-color: rgba(53, 42, 37, 0.76);
