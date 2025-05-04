@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url(images/background-secundary.png);
+    background-size: cover;
+    margin: 10px;
+}
+
+.background-overlay{
+    background-color: rgba(0, 0, 0, 0.42);
+    width: 100%;
+    height: 100%;
+}
+
+#botao-voltar-para-main, .botao-enviar{
+    width: 100px;
+    height: 25px;
+    background-color: #f8670d;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+#botao-voltar-para-main a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.4em;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.45);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h2{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.divs{
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.divs p{
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+.todos-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+.produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+        "imagem conteudo"
+        "imagem botao"; 
+    gap: 20px;
+    max-width: 400px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.164);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center; 
+    margin: 50px;
+}
+
+.produto img {
+    grid-area: imagem; 
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.produto h2, .produto p {
+    grid-area: conteudo;
+    text-align: left;
+    color: white;
+}
+
+.produto .botao-comprar {
+    grid-area: botao; 
+    background-color: #f8670d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.botao-comprar {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.produto .botao-comprar:hover {
+    background-color: #d7540b;
+}
+
+@media (max-width: 1024px) {
+    .todos-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .todos-produtos {
+        grid-template-columns: 1fr; 
+    }
+}
